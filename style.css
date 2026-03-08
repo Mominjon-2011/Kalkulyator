@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    background: #2b2b40;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+h2 {
+    text-align: center;
+    color: #a6e3a1;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    background: #1e1e2e;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: #a6e3a1;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+.screen {
+    background: #181825;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    min-height: 60px;
+    word-wrap: break-word;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    background: #3b3b58;
+    color: white;
+}
+
+button:hover {
+    background: #4b4b68;
+}
+
+.operator {
+    background: #f38ba8;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+.equal {
+    background: #a6e3a1;
+    color: #1e1e2e;
+    grid-column: span 1;
+    font-weight: bold;
+}
+
+.clear {
+    background: #fab387;
+    color: #1e1e2e;
+}
+
+.converter {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #181825;
+    color: white;
+    font-size: 1rem;
+}
+
+.result-box {
+    background: #a6e3a1;
+    color: #1e1e2e;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
